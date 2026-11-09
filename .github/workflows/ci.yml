@@ -27,7 +27,7 @@ jobs:
           python -m pip install ".[dev]"
       - name: CLI smoke
         run: |
-          fablescan
+          fablescan --help
           fablescan --version
       - name: Tests
         run: python -m pytest -q
